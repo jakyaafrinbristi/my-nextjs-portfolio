@@ -1,10 +1,12 @@
 
+import AboutMe from "./about/page";
 import Banner from "./banner/page";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
+    <div>
    <Banner></Banner>
-    </main>
+   <AboutMe></AboutMe>
+    </div>
   );
 }
