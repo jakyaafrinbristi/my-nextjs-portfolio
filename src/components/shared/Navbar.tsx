@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from "next/link";
@@ -20,40 +21,37 @@ const Navbar = () => {
 
   const isActive = (path: string) =>
     pathname === path
-      ? "text-orange-400 underline underline-offset-4"
-      : "text-muted-foreground hover:text-orange-400";
+      ? "text-indigo-400 underline underline-offset-4"
+      : "text-muted-foreground hover:text-indigo-400";
 
   return (
-    <header className="fixed top-0 w-full bg-background/80 backdrop-blur border-b z-50">
+    <header className="fixed top-0 w-full z-50 backdrop-blur bg-gradient-to-r from-zinc-900/80 via-black/70 to-zinc-900/80 border-b border-indigo-500 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
-        {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-orange-500">
+        <Link href="/" className="text-2xl font-bold text-indigo-400 tracking-wide hover:text-indigo-500 transition-colors">
           Jakya Afrin Bristi
         </Link>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex gap-6 text-sm font-medium">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`${isActive(item.href)} transition-colors`}
+              className={`relative group ${isActive(item.href)} transition-colors`}
             >
-              {item.label}
+              <span>{item.label}</span>
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-indigo-400 group-hover:w-full transition-all duration-300" />
             </Link>
           ))}
         </nav>
 
-        {/* Right side buttons */}
         <div className="flex items-center gap-2">
           <Button variant="outline" className="gap-2 text-sm" asChild>
-            <a href="/resume.pdf" download>
+            <a  download>
               <Download className="w-4 h-4" />
               Resume
             </a>
           </Button>
 
-          {/* Mobile Menu Icon */}
           <div className="md:hidden">
             <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
               {mobileMenuOpen ? (
@@ -66,7 +64,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-background border-t px-4 py-4 space-y-2">
           {navItems.map((item) => (

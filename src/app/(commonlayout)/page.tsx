@@ -1,9 +1,10 @@
-import { Button } from "@/components/ui/button";
+
+import Banner from "./banner/page";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen items-center justify-center">
-      <Button variant="default">Hello, Portfolio!</Button>
+   <Banner></Banner>
     </main>
   );
 }
