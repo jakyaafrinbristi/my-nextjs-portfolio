@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 w-full z-50 backdrop-blur bg-gradient-to-r from-zinc-900/80 via-black/70 to-zinc-900/80 border-b border-indigo-500 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
-        <Link href="/" className="text-2xl font-bold text-indigo-400 tracking-wide hover:text-indigo-500 transition-colors">
+        <Link href="/" className="text-2xl font-bold text-indigo-400 italic tracking-wide hover:text-indigo-500 transition-colors">
           Jakya Afrin Bristi
         </Link>
 

@@ -1,21 +1,27 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-zinc-900 via-black to-zinc-900 px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
-      {/* Image on Left */}
+      {/* Image on Left with Animation */}
       <div className="md:col-span-1 flex justify-center">
-        <div className="p-2 rounded-xl bg-gradient-to-tr from-indigo-500 via-indigo-300 to-indigo-500 shadow-xl">
+        <motion.div
+          whileHover={{ scale: 1.05, rotate: 1 }}
+          whileTap={{ scale: 0.98 }}
+          transition={{ type: "spring", stiffness: 300 }}
+          className="p-2 rounded-xl bg-gradient-to-tr from-indigo-500 via-indigo-300 to-indigo-500 shadow-xl"
+        >
           <Image
-            src="https://your-new-image-link.com/image.jpg" // 🖼️ Replace this with your desired image URL
+            src="https://i.ibb.co/XZsrkVjK/image.jpg"
             alt="Jakya Afrin Bristi"
             width={320}
             height={420}
-            className="rounded-xl object-cover border-4 border-white shadow-lg transition-transform transform hover:scale-105 duration-300 ease-in-out"
+            className="rounded-xl object-cover border-4 border-white shadow-lg"
           />
-        </div>
+        </motion.div>
       </div>
 
       {/* Text on Right */}

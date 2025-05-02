@@ -16,11 +16,11 @@ const Banner = () => {
         transition={{ duration: 0.8 }}
         className="flex-1 flex flex-col items-center md:items-start text-center md:text-left"
       >
-        <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-wide">
+        <h1 className="text-2xl md:text-5xl font-extrabold text-white tracking-wide">
           JAKYA AFRIN BRISTI
         </h1>
         <h3 className="text-indigo-400 italic text-xl md:text-2xl mt-2 mb-4 font-semibold">
-          Frontend Developer
+          MernStack Developer
         </h3>
         <p className="text-gray-300 max-w-xl text-md font-medium leading-relaxed">
         I am dedicated and hardworking, always striving for excellence. With a flexible mindset,
