@@ -5,6 +5,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { FaDownload } from "react-icons/fa";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -28,20 +29,19 @@ const Banner = () => {
         </p>
 
         <div className="flex flex-col md:flex-row gap-4 mt-6">
-          <a
+          <Link
             href="/projects"
             className="w-[180px] bg-indigo-400 text-black hover:bg-indigo-500 duration-300 text-lg px-4 py-2 rounded flex items-center justify-center gap-2"
           >
             View Projects <MdKeyboardDoubleArrowRight />
-          </a>
+          </Link>
 
-          <a
-            href="/resume.pdf"
-            download
+          <div
+           
             className="w-[180px] bg-indigo-400 text-black hover:bg-indigo-500 duration-300 text-lg px-4 py-2 rounded flex items-center justify-center gap-2"
           >
             Resume <FaDownload />
-          </a>
+          </div>
         </div>
       </motion.div>
 
