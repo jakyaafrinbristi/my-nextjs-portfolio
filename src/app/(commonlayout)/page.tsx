@@ -3,6 +3,7 @@ import AboutMe from "./about/page";
 import Banner from "./banner/page";
 import Contact from "./contacts/page";
 import EducationPage from "./education/page";
+import Projects from "./projects/page";
 import Skills from "./skills/page";
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
    <Contact></Contact>
    <EducationPage></EducationPage>
    <Skills></Skills>
+   <Projects></Projects>
     </div>
   );
 }

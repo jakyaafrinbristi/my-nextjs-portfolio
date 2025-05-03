@@ -1,0 +1,64 @@
+[
+    {
+      "id": 1,
+      "projectName": "Bicycle Store",
+      "projectImage": "https://i.ibb.co.com/PZqvzxw7/Screenshot-16.png",
+      "clientSideGithub": "https://github.com/jakyaafrinbristi/bicycle-store-frontend-project",
+      "serverSideGithub": "https://github.com/jakyaafrinbristi/bi-cycle-store" ,
+      "liveLink": "https://bicycle-store-frontend-project.vercel.app/",
+      "details": "Bicycle Store is an e-commerce application that allows users to browse, order, and manage bicycles with secure authentication and a responsive design. The application provides a role-based dashboard for admins and customers, integrated payment gateways, and efficient product management functionalities.",
+      "technologiesUsed": ["Redux","RTK query","ShadCN/UI", "Node.js", "Express.js", "mongoose", "SurjoPay (Payment Gateway)",  "React-router", "mongoDB", "JWT", "Tailwind CSS"],
+      "willImprove": [
+  "Dashboard Default Page",
+  "Mobile Banking System (Bkash)"
+      ],
+      "challenges" : [
+        "Payment Gateway",
+        "Dashboard System",
+        "Role Based Authorization"
+
+      ]
+    },
+      {
+        "id": 2,
+        "projectName": "Fine Med Medicine Shop",
+        "projectImage": "https://i.ibb.co/1ftQwtN5/medimart.png",
+        "clientSideGithub": "https://github.com/aamamun24/FineMed-Client",
+        "serverSideGithub": "https://github.com/Hr-Sajib/Fine-Med-server",
+        "liveLink": "https://fine-med-client.vercel.app/",
+        "details": "A modern, responsive frontend for an online medicine shop built with Next.js, Redux Toolkit, RTK Query, Tailwind CSS, and Mongoose (for backend integration). This project focuses on providing a seamless shopping experience for customers looking to buy medicines online." ,
+        "technologiesUsed": ["Redux", "Tailwind CSS", "Node.js", "Next.js",  "Express","mongoDB", "JWT", "Swiper","Framer motion"],
+        "willImprove": [
+          "Sorting",
+          "Choose by Category",
+          "Contact system"
+        ],
+        "challenges" : [
+          "JWT token",
+          "Getting query data from various users"
+         
+        ]
+      },
+      {
+        "id": 3,
+        "projectName": "Luxe Looks",
+        "projectImage": "https://i.ibb.co/vxMMjgGt/beauty-Service.png",
+        "clientSideGithub": "https://github.com/jakyaafrinbristi/b9a11-client-side",
+        "serverSideGithub": "https://github.com/jakyaafrinbristi/b9a11-server-side",
+        "liveLink": "https://b9a11-76a11.web.app/",
+        "details": "This is a beauty service Web Application. Here you can view, create, delete recommendations. All data of this website are handled with MongoDB .This website is authenticated with firebase authentication system . and its secured with json web token (JWT). So you can see only your data. if you try to break rules you will be logged out .This website has admin control like an admin can add new query in the website without coding . Also can update any query info or delete an existing query from the website .Some routes are private for logged in user. So you cannot visit those routes without logging in.You can have a look of recommendations others has made, for the product query you have made .You can make recommendations on others query . view all recommends you have made and also can delete them if you want" ,
+        "technologiesUsed": ["React", "Tailwind CSS", "Node.js", "DaisyUI", "Firebase", "React-router", "Express","mongoDB", "JWT", "Swiper","Framer motion"],
+        "willImprove": [
+          "Sorting",
+          "Choose by Category",
+          "Contact system"
+        ],
+        "challenges" : [
+          "JWT token",
+          "Getting query data from various users"
+         
+        ]
+      }
+      
+    ]
+    

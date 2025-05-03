@@ -8,7 +8,7 @@ const Skills = () => {
         <div className="min-h-screen bg-gradient-to-br from-zinc-900 via-black to-zinc-900 px-6 py-12">
             
             <div className='text-center space-y-3 pb-16'>
-                <h1 className='font-bold text-white text-4xl font-serif'>My Expertise</h1>
+                <h1 className='font-bold text-indigo-500 text-4xl font-serif'>My Expertise</h1>
                 <p className="text-center max-w-3xl mx-auto text-gray-400 font-medium">
                 Discover my core expertise in web development, including modern frameworks, backend technologies, and design tools, showcasing versatile skill sets.
                 </p>
