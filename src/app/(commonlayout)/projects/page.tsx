@@ -1,7 +1,7 @@
 "use client"; 
 
 import { useEffect, useState } from "react";
-import ProjectCard from "./projectCard/page";
+import ProjectCard from "../../../components/projectCard/page";
 
 type Project = {
   id: number;

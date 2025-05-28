@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { motion } from "framer-motion";
@@ -5,8 +6,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-zinc-900 via-black to-zinc-900 px-6 py-12 flex items-center justify-center ">
-      
+    <section className="min-h-screen bg-gradient-to-br from-zinc-900 via-black to-zinc-900 px-6 py-12 flex items-center justify-center">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -16,10 +16,11 @@ const Contact = () => {
         {/* Heading and Description */}
         <div className="col-span-1 md:col-span-2 text-center mt-16">
           <h2 className="text-2xl font-semibold text-indigo-400">
-            Let’s Get in Touch
+            Let's Get in Touch
           </h2>
           <p className="text-lg text-gray-300 mb-6">
-          I’m open to collaborations, discussions, and anything that sparks creativity. Feel free to drop me a message anytime!
+            I'm open to collaborations, discussions, and anything that sparks creativity. 
+            Feel free to drop me a message anytime!
           </p>
         </div>
 
@@ -42,8 +43,16 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Right Form */}
-        <form className="space-y-8 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+        {/* Right Form - Now fully functional with FormSubmit */}
+        <form 
+          action="https://formsubmit.co/jakyaafrinb@gmail.com" 
+          method="POST"
+          className="space-y-8 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
+        >
+          <input type="hidden" name="_subject" value="New message from portfolio!" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" className="hidden" />
+          
           <h2 className="text-2xl font-semibold text-center md:text-left text-indigo-400">
             Send Me a Message
           </h2>
@@ -53,6 +62,7 @@ const Contact = () => {
               <label className="block mb-1 text-gray-200">Name</label>
               <input
                 type="text"
+                name="name"
                 placeholder="Your Name"
                 className="w-full px-5 py-3 rounded bg-black text-white border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
                 required
@@ -63,6 +73,7 @@ const Contact = () => {
               <label className="block mb-1 text-gray-200">Email</label>
               <input
                 type="email"
+                name="email"
                 placeholder="you@example.com"
                 className="w-full px-5 py-3 rounded bg-black text-white border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all duration-300"
                 required
@@ -72,6 +83,7 @@ const Contact = () => {
             <div>
               <label className="block mb-1 text-gray-200">Message</label>
               <textarea
+                name="message"
                 rows={5}
                 placeholder="Write your message..."
                 className="w-full px-5 py-3 rounded bg-black text-white border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all duration-300"

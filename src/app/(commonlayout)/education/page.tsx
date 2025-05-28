@@ -24,9 +24,14 @@ const EducationPage = () => {
           My academic journey so far.
         </motion.p>
 
-        <div className="space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* BSc */}
-          <div className="bg-black/40 border border-indigo-500 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.3 }}
+            className="bg-black/40 border border-indigo-500 p-6 rounded-xl shadow-md hover:shadow-lg transition"
+          >
             <h3 className="text-2xl font-semibold text-indigo-300">
               B.Sc in Computer Science & Engineering
             </h3>
@@ -34,10 +39,15 @@ const EducationPage = () => {
               Institute of Science & Technology
             </p>
             <p className="text-gray-400">CGPA: 3.08</p>
-          </div>
+          </motion.div>
 
           {/* HSC */}
-          <div className="bg-black/40 border border-indigo-500 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.4 }}
+            className="bg-black/40 border border-indigo-500 p-6 rounded-xl shadow-md hover:shadow-lg transition"
+          >
             <h3 className="text-2xl font-semibold text-indigo-300">
               Higher Secondary Certificate (HSC)
             </h3>
@@ -45,10 +55,15 @@ const EducationPage = () => {
               Birshreshtha Munshi Abdur Rouf Public College
             </p>
             <p className="text-gray-400">GPA: 4.67</p>
-          </div>
+          </motion.div>
 
           {/* SSC */}
-          <div className="bg-black/40 border border-indigo-500 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4, delay: 0.5 }}
+            className="bg-black/40 border border-indigo-500 p-6 rounded-xl shadow-md hover:shadow-lg transition"
+          >
             <h3 className="text-2xl font-semibold text-indigo-300">
               Secondary School Certificate (SSC)
             </h3>
@@ -56,7 +71,7 @@ const EducationPage = () => {
               Birshreshtha Munshi Abdur Rouf Public College
             </p>
             <p className="text-gray-400">GPA: 5.00</p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

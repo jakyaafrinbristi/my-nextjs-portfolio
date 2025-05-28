@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -25,10 +24,23 @@ const Navbar = () => {
       ? "text-indigo-400 underline underline-offset-4"
       : "text-muted-foreground hover:text-indigo-400";
 
+  const handleDownloadResume = () => {
+    const resumePath = "/mernstack resume bristi.pdf"; // Ensure it's in public folder
+    const link = document.createElement("a");
+    link.href = resumePath;
+    link.setAttribute("download", "mernstack resume bristi.pdf");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <header className="fixed top-0 w-full z-50 backdrop-blur bg-gradient-to-r from-zinc-900/80 via-black/70 to-zinc-900/80 border-b border-indigo-500 shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
-        <Link href="/" className="text-2xl font-bold text-indigo-400 italic tracking-wide hover:text-indigo-500 transition-colors">
+        <Link
+          href="/"
+          className="text-2xl font-bold text-indigo-400 italic tracking-wide hover:text-indigo-500 transition-colors"
+        >
           Jakya Afrin Bristi
         </Link>
 
@@ -46,11 +58,9 @@ const Navbar = () => {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button variant="outline" className="gap-2 text-sm" asChild>
-            <a  download>
-              <Download className="w-4 h-4" />
-              Resume
-            </a>
+          <Button variant="outline" className="gap-2 text-sm" onClick={handleDownloadResume}>
+            <Download className="w-4 h-4" />
+            Resume
           </Button>
 
           <div className="md:hidden">
